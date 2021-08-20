@@ -7,7 +7,7 @@
 ### Regex para todas las paginas
 
 ```regex
-pu-depositoaplazoinversion-([A-Za-z0-9-]+)simulacion
+pu-depositoaplazoinversion-([A-Za-z0-9-.]+)simulacion
 ```
 
 #### Continuar - paso 1
@@ -27,9 +27,9 @@ pu-depositoaplazoinversion-paso2-resultadosimulacion
 ```javascript
 const event = {
   event: 'gaEvent',
-  eventCategory: 'op :: onb ahorro',
-  eventLabel: 'continuar',
-  eventAction: 'paso 2',
+  eventCategory: 'op :: deposito a plazo inversion',
+  eventLabel: '',
+  eventAction: 'simular',
 };
 ```
 

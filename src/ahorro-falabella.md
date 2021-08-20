@@ -10,7 +10,7 @@
 
 pu-onboardingpasivos-(yacliente|paso1-iniciodatos|paso2-inicio|paso3-direccionprovincia|paso3.1-datospersonales)-ahorrobf
 
-pu-onboardingpasivos-([A-Za-z0-9-]+)-ahorrobf
+pu-onboardingpasivos-([A-Za-z0-9-.]+)-ahorrobf
 ```
 
 #### Continuar - paso 1

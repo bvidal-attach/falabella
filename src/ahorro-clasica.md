@@ -7,7 +7,7 @@
 ### Regex para todas las paginas
 
 ```regex
-pu-onboardingpasivos-([A-Za-z0-9-]+)-ahorro
+pu-onboardingpasivos-([A-Za-z0-9-.]+)-ahorro
 ```
 
 #### Continuar - paso 1
@@ -33,7 +33,7 @@ pu-onboardingpasivos-paso2-inicio-ahorro
 ```javascript
 const event = {
   event: 'gaEvent',
-  eventCategory: 'op :: onb ahorro',
+  eventCategory: 'op :: onb ahorro clasica',
   eventLabel: 'continuar',
   eventAction: 'paso 2',
 };
@@ -104,3 +104,9 @@ pu-onboardingpasivos-creacionclave-ahorro
 ```
 
 ---
+
+#### Continuar - estas a un paso
+
+```regex
+pu-onboardingpasivos-validacionhuella-ahorrobf
+```
