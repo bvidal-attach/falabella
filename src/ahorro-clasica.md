@@ -27,6 +27,9 @@ pu-onboardingpasivos-yacliente-ahorro
 ```regex
 pu-onboardingpasivos-paso2-inicio-ahorro
 ```
+```regex
+pr-onboardingpasivos-paso8-finalexitoso-ahorrobf
+```
 
 **Complete registration**
 
@@ -36,6 +39,12 @@ const event = {
   eventCategory: 'op :: onb ahorro clasica',
   eventLabel: 'continuar',
   eventAction: 'paso 2',
+};
+const event = {
+  event: 'gaEvent',
+  eventCategory: 'op :: onb ahorro',
+  eventLabel: 'habilitar autorizar',
+  eventAction: 'paso 7',
 };
 ```
 
