@@ -7,8 +7,51 @@
 ### Regex para todas las paginas
 
 ```regex
-pu-depositoaplazoinversion-([A-Za-z0-9-.]+)simulacion
+(pu|pr)-depositoaplazoinversion-([A-Za-z0-9-.]+)-simulacion
 ```
+
+---
+
+### Complete registration
+
+_Privada_
+
+```javascript
+const event = {
+  event: 'gaEvent',
+  eventCategory: 'op :: deposito a plazo inversion',
+  eventLabel: '',
+  eventAction: 'simular',
+};
+```
+
+_Publica_
+
+```regex
+pu-depositoaplazoinversion-paso2-resultadosimulacion
+
+pu-depositoaplazoinversion-([A-Za-z0-9]+)-resultadosimulacion
+```
+
+### Purchase
+
+_Privada_
+
+```regex
+pr-depositoaplazoinversion-paso9-inversionrealizada
+
+pr-depositoaplazoinversion-([A-Za-z0-9]+)-inversionrealizada
+```
+
+_Publica_
+
+```
+No existe
+```
+
+---
+
+### Steps
 
 #### Continuar - paso 1
 
@@ -21,16 +64,3 @@ pu-depositoaplazoinversion-paso1-simulacion
 ```regex
 pu-depositoaplazoinversion-paso2-resultadosimulacion
 ```
-
-**Complete registration**
-
-```javascript
-const event = {
-  event: 'gaEvent',
-  eventCategory: 'op :: deposito a plazo inversion',
-  eventLabel: '',
-  eventAction: 'simular',
-};
-```
-
----

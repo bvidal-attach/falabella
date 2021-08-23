@@ -7,8 +7,63 @@
 ### Regex para todas las paginas
 
 ```regex
-pu-onboardingpasivos-([A-Za-z0-9-.]+)-ahorro
+(pu|pr)-onboardingpasivos-([A-Za-z0-9-.]+)-ahorro
 ```
+
+---
+
+### Complete registration
+
+_Privada_
+
+```
+No existe
+```
+
+_Publica_
+
+```regex
+pu-onboardingpasivos-paso2-inicio-ahorro
+
+pu-onboardingpasivos-([A-Za-z0-9-]+)-ahorro
+```
+
+### Purchase
+
+```regex
+(pu|pr)-onboardingpasivos([A-Za-z0-9-]+)finalexitoso-ahorro
+```
+
+_Privada_
+
+```regex
+pr-onboardingpasivos-paso8-finalexitoso-ahorro
+
+pr-onboardingpasivos-([A-Za-z0-9]+)-finalexitoso-ahorro
+```
+
+_Publica_
+
+```regex
+pu-onboardingpasivos-finalexitoso-ahorro
+
+pu-onboardingpasivos-finalexitoso-ahorro
+```
+
+---
+
+#### Eventos
+
+```javascript
+const event = {
+  event: 'gaEvent',
+  eventCategory: 'op :: onb ahorro clasica',
+  eventLabel: 'continuar',
+  eventAction: 'paso 2',
+};
+```
+
+### Steps
 
 #### Continuar - paso 1
 
@@ -26,26 +81,6 @@ pu-onboardingpasivos-yacliente-ahorro
 
 ```regex
 pu-onboardingpasivos-paso2-inicio-ahorro
-```
-```regex
-pr-onboardingpasivos-paso8-finalexitoso-ahorrobf
-```
-
-**Complete registration**
-
-```javascript
-const event = {
-  event: 'gaEvent',
-  eventCategory: 'op :: onb ahorro clasica',
-  eventLabel: 'continuar',
-  eventAction: 'paso 2',
-};
-const event = {
-  event: 'gaEvent',
-  eventCategory: 'op :: onb ahorro',
-  eventLabel: 'habilitar autorizar',
-  eventAction: 'paso 7',
-};
 ```
 
 #### Continuar - paso 3
@@ -117,5 +152,5 @@ pu-onboardingpasivos-creacionclave-ahorro
 #### Continuar - estas a un paso
 
 ```regex
-pu-onboardingpasivos-validacionhuella-ahorrobf
+pu-onboardingpasivos-validacionhuella-ahorro
 ```

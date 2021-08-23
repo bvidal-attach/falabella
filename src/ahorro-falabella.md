@@ -7,11 +7,63 @@
 ### Regex
 
 ```regex
-
-pu-onboardingpasivos-(yacliente|paso1-iniciodatos|paso2-inicio|paso3-direccionprovincia|paso3.1-datospersonales)-ahorrobf
-
-pu-onboardingpasivos-([A-Za-z0-9-.]+)-ahorrobf
+(pu|pr)-onboardingpasivos-([A-Za-z0-9-.]+)-ahorrobf
 ```
+
+---
+
+### Complete registration
+
+_Privada_
+
+```
+No existe
+```
+
+_Publica_
+
+```regex
+pu-onboardingpasivos-paso2-inicio-ahorrobf
+
+pu-onboardingpasivos-([A-Za-z0-9-]+)-ahorrobf
+```
+
+### Purchase
+
+```regex
+(pu|pr)-onboardingpasivos([A-Za-z0-9-]+)finalexitoso-ahorrobf
+```
+
+_Privada_
+
+```regex
+pr-onboardingpasivos-paso8-finalexitoso-ahorrobf
+
+pr-onboardingpasivos-([A-Za-z0-9]+)-finalexitoso-ahorrobf
+```
+
+_Publica_
+
+```regex
+pu-onboardingpasivos-finalexitoso-ahorrobf
+
+pu-onboardingpasivos-finalexitoso-ahorrobf
+```
+
+---
+
+#### Eventos
+
+```javascript
+const event = {
+  event: 'gaEvent',
+  eventCategory: 'op :: onb ahorro',
+  eventLabel: 'continuar',
+  eventAction: 'paso 2',
+};
+```
+
+### Steps
 
 #### Continuar - paso 1
 
@@ -29,17 +81,6 @@ pu-onboardingpasivos-yacliente-ahorrobf
 
 ```regex
 pu-onboardingpasivos-paso2-inicio-ahorrobf
-```
-
-**Complete registration**
-
-```javascript
-const event = {
-  event: 'gaEvent',
-  eventCategory: 'op :: onb ahorro',
-  eventLabel: 'continuar',
-  eventAction: 'paso 2',
-};
 ```
 
 #### Continuar - paso 3
