@@ -7,7 +7,7 @@
 ### Regex para todas las paginas
 
 ```regex
-(pu|pr)-onboardingpasivos-([A-Za-z0-9-.]+)-ahorro
+(pu|pr)-onboardingpasivos-([A-Za-z0-9-.]+)ahorro
 ```
 
 ---
@@ -45,8 +45,6 @@ pr-onboardingpasivos-([A-Za-z0-9]+)-finalexitoso-ahorro
 _Publica_
 
 ```regex
-pu-onboardingpasivos-finalexitoso-ahorro
-
 pu-onboardingpasivos-finalexitoso-ahorro
 ```
 

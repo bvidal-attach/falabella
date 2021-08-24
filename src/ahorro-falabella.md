@@ -25,7 +25,7 @@ _Publica_
 ```regex
 pu-onboardingpasivos-paso2-inicio-ahorrobf
 
-pu-onboardingpasivos-([A-Za-z0-9-]+)-ahorrobf
+pu-onboardingpasivos-([A-Za-z0-9-]+)ahorrobf
 ```
 
 ### Purchase
