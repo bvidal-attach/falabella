@@ -39,13 +39,15 @@ _Privada_
 ```regex
 pr-onboardingpasivos-paso8-finalexitoso-ahorro
 
-pr-onboardingpasivos-([A-Za-z0-9]+)-finalexitoso-ahorro
+pr-onboardingpasivos-([A-Za-z0-9]+)-finalexitoso-ahorro($|\/)|pu-onboardingpasivos-creacionclave-ahorro($|\/)
 ```
 
 _Publica_
 
 ```regex
-pu-onboardingpasivos-finalexitoso-ahorro
+pu-onboardingpasivos-creacionclave-ahorro
+
+pr-onboardingpasivos-([A-Za-z0-9]+)-finalexitoso-ahorro($|\/)|pu-onboardingpasivos-creacionclave-ahorro($|\/)
 ```
 
 ---
